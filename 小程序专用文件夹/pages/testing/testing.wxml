@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="section">
+    <view class="section-title">检测流程指引</view>
+    <view class="steps-card">
+      <view class="steps-line"></view>
+      <view class="step-item" wx:for="{{testingSteps}}" wx:key="step">
+        <view class="step-circle">{{item.step}}</view>
+        <view class="step-content">
+          <view class="step-title">{{item.title}}</view>
+          <view class="step-desc">{{item.desc}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">常见检测方法</view>
+    <view class="method-card" wx:for="{{testingMethods}}" wx:key="name">
+      <view class="method-header">
+        <view class="method-icon">🔬</view>
+        <view class="method-name">{{item.name}}</view>
+      </view>
+      <view class="method-desc">{{item.desc}}</view>
+      <view class="method-detail">{{item.detail}}</view>
+      <view class="method-suitable">
+        <text class="tag">适合人群</text>
+        <text class="suitable-text">{{item.suitable}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">检测间隔建议</view>
+    <view class="screening-card">
+      <view class="screening-item" wx:for="{{screeningRecommendations}}" wx:key="age">
+        <view class="screening-age">{{item.age}}</view>
+        <view class="screening-info">
+          <view class="screening-method">{{item.method}}</view>
+          <view class="screening-interval">{{item.interval}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">报告解读示例</view>
+    <view class="report-card">
+      <view class="report-header">
+        <text class="report-icon">📋</text>
+        <text class="report-title">HPV检测报告（示例）</text>
+      </view>
+      <view class="report-result negative">
+        <view class="result-label">检测结果</view>
+        <view class="result-value">HPV 16/18型 阴性（-）</view>
+        <view class="result-value">其他高危型 阴性（-）</view>
+      </view>
+      <view class="report-interpretation">
+        <view class="interpretation-title">解读说明</view>
+        <view class="interpretation-text">看到阳性别紧张，大部分是一过性感染。免疫系统会在1-2年内自动清除病毒。</view>
+      </view>
+      <view class="report-advice">
+        <text class="tag">建议</text>
+        <text class="advice-text">定期复查，保持健康生活方式</text>
+      </view>
+    </view>
+  </view>
+</view>

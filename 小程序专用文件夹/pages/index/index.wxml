@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="banner">
+    <view class="banner-icon">🛡️</view>
+    <view class="banner-title">了解 HPV，主动预防，远离宫颈癌</view>
+    <view class="banner-subtitle">科学、易懂、不恐慌</view>
+  </view>
+
+  <view class="quick-entries">
+    <view class="section-title">快捷入口</view>
+    <view class="entry-cards">
+      <view class="entry-card" wx:for="{{quickEntries}}" wx:key="id" bindtap="onEntryTap" data-url="{{item.url}}">
+        <view class="entry-icon">{{item.icon}}</view>
+        <view class="entry-title">{{item.title}}</view>
+        <view class="entry-subtitle">{{item.subtitle}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="latest-articles">
+    <view class="section-title">最新科普</view>
+    <view class="article-list">
+      <view class="article-item" wx:for="{{featuredArticles}}" wx:key="id" bindtap="onArticleTap" data-id="{{item.id}}">
+        <view class="article-title">{{item.title}}</view>
+        <view class="article-summary">{{item.summary}}</view>
+        <view class="article-arrow">›</view>
+      </view>
+    </view>
+  </view>
+</view>

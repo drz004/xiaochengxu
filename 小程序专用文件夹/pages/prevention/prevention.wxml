@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="section">
+    <view class="section-title">疫苗专区</view>
+    <view class="vaccine-cards">
+      <view class="vaccine-card" wx:for="{{vaccines}}" wx:key="type">
+        <view class="vaccine-type {{item.type === '二价' ? 'type-2' : (item.type === '四价' ? 'type-4' : 'type-9')}}">{{item.type}}</view>
+        <view class="vaccine-names">{{item.names}}</view>
+        <view class="vaccine-detail">
+          <view class="vaccine-row">
+            <text class="label">预防</text>
+            <text class="value">{{item.prevention_type}}</text>
+          </view>
+          <view class="vaccine-row">
+            <text class="label">保护效力</text>
+            <text class="value">{{item.efficacy}}</text>
+          </view>
+          <view class="vaccine-row">
+            <text class="label">适用年龄</text>
+            <text class="value">{{item.age}}</text>
+          </view>
+          <view class="vaccine-row">
+            <text class="label">接种程序</text>
+            <text class="value">{{item.schedule}}</text>
+          </view>
+          <view class="vaccine-row">
+            <text class="label">参考价格</text>
+            <text class="value price">{{item.price}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">生活预防建议</view>
+    <view class="tips-card">
+      <view class="tips-grid">
+        <view class="tip-item" wx:for="{{preventionTips}}" wx:key="text">
+          <view class="tip-icon">{{item.icon}}</view>
+          <view class="tip-text">{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">筛查日历提醒</view>
+    <view class="reminder-card">
+      <view class="reminder-icon">📅</view>
+      <view class="reminder-content">
+        <view class="reminder-title">添加筛查提醒</view>
+        <view class="reminder-desc">选择下次筛查日期，设置微信服务通知提醒</view>
+      </view>
+      <view class="reminder-btn" bindtap="onAddReminder">添加提醒</view>
+    </view>
+  </view>
+</view>

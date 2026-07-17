@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/knowledge/knowledge",
+    "pages/testing/testing",
+    "pages/prevention/prevention",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00A6A6",
+    "navigationBarTitleText": "HPV 科普小卫士",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#00A6A6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "科普"
+      },
+      {
+        "pagePath": "pages/testing/testing",
+        "text": "检测"
+      },
+      {
+        "pagePath": "pages/prevention/prevention",
+        "text": "预防"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

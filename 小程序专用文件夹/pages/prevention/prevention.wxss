@@ -1,0 +1,158 @@
+.section {
+  padding: 0 30rpx;
+  margin-bottom: 40rpx;
+}
+
+.vaccine-cards {
+  display: flex;
+  gap: 20rpx;
+}
+
+.vaccine-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx 16rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
+  min-width: 0;
+}
+
+.vaccine-type {
+  display: inline-block;
+  padding: 6rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+}
+
+/* 修复点：将中文类名改为英文类名 */
+.vaccine-type.type-2 {
+  background-color: #E8F8F8;
+  color: #00A6A6;
+}
+
+.vaccine-type.type-4 {
+  background-color: #FFF5F7;
+  color: #E8899A;
+}
+
+.vaccine-type.type-9 {
+  background: linear-gradient(135deg, #00A6A6 0%, #00BFBF 100%);
+  color: #ffffff;
+}
+
+.vaccine-names {
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 16rpx;
+}
+
+.vaccine-detail {
+  border-top: 1rpx solid #f0f0f0;
+  padding-top: 16rpx;
+}
+
+.vaccine-row {
+  margin-bottom: 12rpx;
+}
+
+.vaccine-row:last-child {
+  margin-bottom: 0;
+}
+
+.vaccine-row .label {
+  display: block;
+  font-size: 10px;
+  color: #888888;
+  margin-bottom: 4rpx;
+}
+
+.vaccine-row .value {
+  display: block;
+  font-size: 11px;
+  color: #333333;
+  line-height: 1.4;
+}
+
+.vaccine-row .value.price {
+  color: #00A6A6;
+  font-weight: bold;
+}
+
+.tips-card {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
+}
+
+.tips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10rpx;
+}
+
+.tip-item {
+  width: 25%;
+  padding: 10rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tip-icon {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #E8F8F8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12rpx;
+  font-size: 36rpx;
+}
+
+.tip-text {
+  font-size: 12px;
+  color: #333333;
+}
+
+.reminder-card {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
+}
+
+.reminder-icon {
+  font-size: 48rpx;
+  margin-right: 24rpx;
+}
+
+.reminder-content {
+  flex: 1;
+}
+
+.reminder-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8rpx;
+}
+
+.reminder-desc {
+  font-size: 13px;
+  color: #888888;
+  line-height: 1.4;
+}
+
+.reminder-btn {
+  background-color: #00A6A6;
+  color: #ffffff;
+  padding: 16rpx 24rpx;
+  border-radius: 30rpx;
+  font-size: 14px;
+  white-space: nowrap;
+}

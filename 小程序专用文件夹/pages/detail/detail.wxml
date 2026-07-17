@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="article-header">
+    <view class="article-title">{{article.title}}</view>
+    <view class="article-summary">{{article.summary}}</view>
+  </view>
+
+  <view class="article-content">
+    <rich-text nodes="{{article.content}}"></rich-text>
+  </view>
+
+  <view class="disclaimer-box">
+    <view class="disclaimer-icon">ℹ️</view>
+    <view class="disclaimer-text">本文仅作科普参考，如有身体不适或疑问，请及时咨询医生。</view>
+  </view>
+</view>
+
+<view class="fixed-bottom">
+  <view class="bottom-btns">
+    <button class="bottom-btn share-btn" bindtap="onShare">
+      <text class="btn-icon">↗️</text>
+      <text>分享给朋友</text>
+    </button>
+    <button class="bottom-btn home-btn" bindtap="onGoHome">
+      <text class="btn-icon">🏠</text>
+      <text>返回首页</text>
+    </button>
+  </view>
+</view>

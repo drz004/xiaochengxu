@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="category-list">
+    <view class="category-item" wx:for="{{categories}}" wx:key="id">
+      <view class="category-header" bindtap="onCategoryTap" data-index="{{index}}">
+        <view class="category-icon">{{item.icon}}</view>
+        <view class="category-name">{{item.name}}</view>
+        <view class="category-arrow {{item.expanded ? 'expanded' : ''}}">›</view>
+      </view>
+      <view class="article-list {{item.expanded ? 'show' : ''}}">
+        <view class="article-item" wx:for="{{item.articles}}" wx:for-item="article" wx:key="id" bindtap="onArticleTap" data-article="{{article}}">
+          <view class="article-title">{{article.title}}</view>
+          <view class="article-summary">{{article.summary}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
